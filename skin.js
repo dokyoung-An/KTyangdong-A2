@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.10/20025
 // Filename: KT ?? -a2.ggsk
-// Generated 2024-11-10T17:00:41
+// Generated 2024-11-10T17:58:33
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_minimap_button', 2, false, { ignoreInState: 0  });
@@ -2503,20 +2503,6 @@ function pano2vrSkin(player,base) {
 				)
 			) {
 				player.setVariableValue('vis_daynight_button', !player.getVariableValue('vis_daynight_button'));
-			}
-			if (
-				(
-					((player.getVariableValue('vis_daynight_button') == true))
-				)
-			) {
-				player.openNext("{node1}","$(cur)");
-			}
-			if (
-				(
-					((player.getVariableValue('vis_daynight_button') == false))
-				)
-			) {
-				player.openNext("{node10}","$(cur)");
 			}
 		}
 		me.__49.ggUpdatePosition=function (useTransition) {
@@ -9713,20 +9699,6 @@ function pano2vrSkin(player,base) {
 		}
 		me._m14.onclick=function (e) {
 			player.setVariableValue('vis_daynight_button', !player.getVariableValue('vis_daynight_button'));
-			if (
-				(
-					((player.getVariableValue('vis_daynight_button') == false))
-				)
-			) {
-				player.openNext("{node10}","$(cur)");
-			}
-			if (
-				(
-					((player.getVariableValue('vis_daynight_button') == true))
-				)
-			) {
-				player.openNext("{node1}","$(cur)");
-			}
 		}
 		me._m14.ggUpdatePosition=function (useTransition) {
 		}
